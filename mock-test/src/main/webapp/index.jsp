@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello World this is new index.jsp!</h2>
+<h2>Hello World this is updated index.jsp!</h2>
 </body>
 </html>
