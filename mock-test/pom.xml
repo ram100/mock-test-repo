@@ -15,21 +15,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-<build>
-    <plugins>
-        <!-- Other plugins -->
 
-        <plugin>
-            <groupId>org.apache.tomcat.maven</groupId>
-            <artifactId>tomcat7-maven-plugin</artifactId>
-            <version>2.2</version>
-            <configuration>
-                <url>http://localhost:9000/mock-test/index.jsp</url>
-                <server>TomcatServer</server>
-                <path>/mock-test</path>
-              <update>true</update>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
+    <finalName>mock-test</finalName>
 </project>
