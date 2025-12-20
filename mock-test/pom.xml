@@ -15,20 +15,35 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
+   <build>
   <plugins>
     <plugin>
-      <groupId>org.codehaus.cargo.maven3</groupId>
-      <artifactId>cargo-maven3-plugin</artifactId>
+      <groupId>org.codehaus.cargo</groupId>
+      <artifactId>cargo-maven2-plugin</artifactId>
+      <version>1.3.2</version>
       <configuration>
+ 
+        <!-- Container configuration -->
         <container>
           <containerId>tomcat9x</containerId>
-		  <type>remote</type>
-         </container>
+          <type>remote</type>
+        </container>
+ 
+        <!-- Configuration to use with the container -->
         <configuration>
+          <type>runtime</type>
           <properties>
-            <cargo.servlet.port>8081</cargo.servlet.port>
+            <cargo.hostname>tomcat.example.com</cargo.hostname>
+            <cargo.servlet.port>80</cargo.servlet.port>
+            <cargo.remote.username>manager</cargo.remote.username>
+            <cargo.remote.password>manager</cargo.remote.password>
           </properties>
+        </configuration>
+ 
+        <!-- Deployer configuration -->
+        <deployer>
+          <type>remote</type>
+        </deployer>
       </configuration>
     </plugin>
   </plugins>
