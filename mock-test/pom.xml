@@ -27,9 +27,9 @@
                 <url>http://localhost:9000/mock-test/index.jsp</url>
                 <server>TomcatServer</server>
                 <path>/mock-test</path>
+              <update>true</update>
             </configuration>
         </plugin>
     </plugins>
 </build>
- 
 </project>
