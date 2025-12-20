@@ -16,6 +16,22 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>mock-test</finalName>
-  </build>
+  <plugins>
+    <plugin>
+      <groupId>org.codehaus.cargo.maven3</groupId>
+      <artifactId>cargo-maven3-plugin</artifactId>
+      <configuration>
+        <container>
+          <containerId>tomcat9x</containerId>
+		  <type>remote</type>
+         </container>
+        <configuration>
+          <properties>
+            <cargo.servlet.port>8081</cargo.servlet.port>
+          </properties>
+      </configuration>
+    </plugin>
+  </plugins>
+      <finalName>mock-test</finalName>
+</build>
 </project>
