@@ -17,8 +17,6 @@
   </dependencies>
 <build>
     <finalName>mock-test1</finalName>
-  </build>
-  <build>
   <plugins>
     <plugin>
       <groupId>org.sonarsource.scanner.maven</groupId>
