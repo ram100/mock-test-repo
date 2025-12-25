@@ -7,6 +7,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>mock-test Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+  <sonar.organization>test</sonar.organization>
+  <sonar.projectKey>org.sonarqube:sonarqube-scanner</sonar.projectKey>
+  <sonar.host.url>http://localhost:9010/</sonar.host.url>
+</properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
