@@ -11,7 +11,6 @@
   <sonar.organization>test</sonar.organization>
   <sonar.projectKey>org.sonarqube:sonarqube-scanner</sonar.projectKey>
   <sonar.host.url>http://localhost:9010/</sonar.host.url>
-  <sonar.token>squ_8390115b1274b67df44ddb63d383e010799cf52b</sonar.token>
 </properties>
   <dependencies>
     <dependency>
